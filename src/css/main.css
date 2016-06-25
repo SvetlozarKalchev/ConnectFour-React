@@ -1,0 +1,114 @@
+body {
+  margin-top: 7em;
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+h1 {
+  text-align: center;
+  font-family: fantasy;
+}
+
+.select{
+  margin-top: 3em;
+  text-align: center;
+  position: relative;
+  padding: 0.4em;
+  width: 12em;
+  background-color: rgba(192,192,192,0.3)
+  color: black;
+  border: 0.5px solid black;
+  border:4px double #bbb;
+  border-radius: 0.3em;
+}
+
+
+
+#game-board {
+  width: 150vw;
+  height: 150vh;
+  border: 1px solid black;
+}
+
+.col {
+  z-index: 1;
+  border: 1px solid black;
+  width: 80px;
+  margin-right: 0 em;
+
+  display: inline-block;
+}
+
+.cell {
+
+  text-align: center;
+  width: 80px;
+  height: 80px;
+  border: 1px solid black;
+}
+
+.cell:nth-child(2n) {
+  //background-color: #EEE;
+}
+
+.focused {
+  background-color: rgba(255,0,0,0.4);
+}
+
+.disk {
+  position: relative;
+  top: 2px;
+  margin: 0 auto;
+  border-radius: 50%;
+  height: 74px;
+  width: 74px;
+  border: 1px solid black;
+}
+
+.yellow {
+  background-color: yellow;
+  position: relative;
+  top: 2px;
+  margin: 0 auto;
+  border-radius: 50%;
+  height: 74px;
+  width: 74px;
+  border: 1px solid black;
+}
+
+.blue {
+  background-color: blue;
+  position: relative;
+  top: 2px;
+  margin: 0 auto;
+  border-radius: 50%;
+  height: 74px;
+  width: 74px;
+  border: 1px solid black;
+}
+
+
+.locked {
+  position: absolute;
+  margin: 0 auto;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  opacity: 0.5;
+}
+
+.lock-screen-message {
+  /*position: absolute;*/*/
+  margin: auto;
+  top: 100;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  font-size: 20px;
+}
